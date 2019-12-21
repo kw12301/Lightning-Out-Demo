@@ -39,19 +39,19 @@ app.all('/proxy',  function(req, res, next) {
 });
  
 app.get('/' ,  function(req,res,next) {
-    res.sendfile('views/index.html');
+    res.sendFile(__dirname + '/views/index.html');
 } ); 
 
 app.get('/index*' ,  function(req,res,next) {
-    res.sendfile('views/index.html');
+    res.sendFile(__dirname + '/views/index.html');
 } );  
  
 app.get('/oauthcallback.html' ,  function(req,res,next) {
-    res.sendfile('views/oauthcallback.html');
+    res.sendFile(__dirname + '/views/oauthcallback.html');
 } ); 
 
 app.get('/Main*' ,   function(req,res,next) {
-    res.sendfile('views/Main.html');
+    res.sendFile(__dirname + '/views/Main.html');
 } );
  
 
